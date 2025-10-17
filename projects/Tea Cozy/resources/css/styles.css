@@ -2,9 +2,33 @@
     border: 1px solid red;
 }
 
+body{
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 10px;
+
+}
+
 header{
     display: flex;
     justify-content: space-between;
+    height: 69px;
+    align-items: center;
+}
+
+.logo{
+
+    background-image: url('../1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 160px;
+    height: 50px;
+
 }
 
 .nav{
@@ -12,10 +36,30 @@ header{
     justify-content: flex-end;
 }
 
+.container{
+    display: flex;
+}
+
+
+
+.heading{
+    background-image: url('../6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
 ul{
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 0;
 }
+
+li{
+    margin-right: 20px;
 }
