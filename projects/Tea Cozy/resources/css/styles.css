@@ -108,6 +108,7 @@ a{
     width: 1000px;
     padding: 0 0;
     margin: 0 auto;
+    align-items: stretch; /* reset so inner content fills width */
     
 }
 .container h2 {
@@ -136,4 +137,45 @@ a{
   display: flex;
   width: 300px;
   height: 200px;
+}
+
+.altbox{
+  display: flex;
+  flex-direction: column;   /* stack contents */
+  align-items: center;      /* <-- center children horizontally */
+  justify-content: center;  /* optional: vertical centering if you set a height */
+  gap: 12px;
+  width: 300px;
+  padding: 16px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 8px;
+  text-align: center;       /* center the text inside */
+}
+
+.alt-row {
+  display: flex;
+  flex-wrap: wrap;           /* allows wrapping on smaller screens */
+  justify-content: center;   /* or: space-between / space-evenly */
+  align-items: stretch;      /* make card heights match if content differs */
+  gap: 24px;                 /* spacing between cards */
+        /* match your container if you like */
+  width: 100%;
+  margin: 0 auto;            /* center the row block itself */
+}
+
+.container h1, 
+.container h2, 
+.container h3 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section{
+  background-image: url(../5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:500px;
+  text-align: center;
 }
