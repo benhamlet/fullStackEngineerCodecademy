@@ -36,9 +36,6 @@ header{
     justify-content: flex-end;
 }
 
-.container{
-    display: flex;
-}
 
 
 
@@ -62,4 +59,8 @@ ul{
 
 li{
     margin-right: 20px;
+}
+
+.title{
+    background-color: Black;
 }
