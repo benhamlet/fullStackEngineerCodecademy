@@ -6,5 +6,50 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    color: seashell;
     text-align: center;
+    background-color: black;
+    opacity: 0.75;
+}
+
+a{
+    color: seashell;
+    text-decoration: none;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+
+}
+
+.title{
+    width: 400px;
+}
+
+.navlinks{
+     flex: 1;                 /* fills space between title & login */
+     display: flex;           /* create a centering context */
+     justify-content: center; /* horizontally center the UL */
+     align-items: center;     /* vertically center */
+}
+
+.navlinks ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;               /* important: kill default margins */
+    padding: 0;
+
+}
+
+li{
+
+}
+
+.login{
+    width: 400px;
 }
