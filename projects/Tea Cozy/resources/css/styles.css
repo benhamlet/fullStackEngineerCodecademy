@@ -179,3 +179,18 @@ section{
   height:500px;
   text-align: center;
 }
+
+.footbox{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  line-height: 10px;
+}
+
+.copyright{
+  display:flex;
+  flex-direction:row;
+  font-size: 18px !important;
+  margin-top: 20px;
+}
