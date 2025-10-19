@@ -56,10 +56,28 @@ li{
 
 .leftmain{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 700px;
+}
+
+.leftmain h1{
+    margin-left: 20px;
+    justify-content: flex-start;
 }
 
 .rightmain{
     flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 700px;
+}
+
+.rightmain h1{
+    margin-left: 20px;
+    justify-content: flex-start;
 }
 
 .main{
