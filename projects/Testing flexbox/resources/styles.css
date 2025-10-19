@@ -53,3 +53,15 @@ li{
 .login{
     width: 400px;
 }
+
+.leftmain{
+    flex: 1;
+}
+
+.rightmain{
+    flex: 2;
+}
+
+.main{
+    height: 700px;
+}
