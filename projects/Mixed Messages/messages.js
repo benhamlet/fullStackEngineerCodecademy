@@ -30,11 +30,32 @@ const activity = [
     'Killing an Assault Trooper with a pipe bomb!'
 ]
 
+const dukeLog = [];
+
 function dukeMessage(){
-  const minLength = Math.min(message.length, location.length, activity.length);
-  const randIndex = Math.floor(Math.random() * minLength);
+    const minLength = Math.min(message.length, location.length, activity.length);
+    const randIndex = Math.floor(Math.random() * minLength);
+
+    const result = {
+        quote: message[randIndex],
+        location: location[randIndex],
+        activity: activity[randIndex]
+    }
+
+    dukeLog.push(result);
+
     return 'Duke said '+ message[randIndex] + ' in ' + location[randIndex] + 
     ', after ' + activity[randIndex] ;
 }
 
+
+
+
 console.log(dukeMessage());
+console.log(dukeMessage());
+console.log(dukeMessage());
+console.log(dukeMessage());
+console.log(dukeMessage());
+console.log(dukeMessage());
+
+console.log(dukeLog);
